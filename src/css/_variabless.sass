@@ -1,0 +1,229 @@
+@import "colors"
+
+body
+  width: 75%
+  margin: 0 auto
+  background: $color-bg
+  font-family: Poppins
+header
+  margin-bottom: 30px
+main
+  background: $color-white
+  border-radius: 10px
+  box-sizing: border-box
+  padding: 20px 20px 20px 30px
+hr
+  border: 1px solid #EBEFF2
+  margin-top: 20px
+
+
+.header
+  height: 20px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 50px
+  h1
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+  &_first
+    display: flex
+    align-items: center
+    p
+      font-weight: 200
+      font-size: 12px
+    select
+      color: $color-blue
+      border: none
+      background: $color-bg
+      font-family: Poppins
+      font-weight: 300
+      font-size: 12px
+    .button
+      display: inline-block
+      margin-left: 20px
+      padding: 7px 12px
+      background-color: $color-blue
+      color: $color-white
+      border-radius: 10%
+      cursor: pointer
+
+.menu
+  display: flex
+  justify-content: space-between
+  &_first
+    a
+      color: $color-black
+      text-decoration: none
+  &_second
+    img
+      margin-left: 5px
+  &_first
+    a::before
+      content: 'K'
+      font-weight: 600
+      color: $color-white
+      background: $color-black
+      padding: 4px 9px
+      border-radius: 50%
+      margin-right: 5px
+
+.container
+  margin-top: 25px
+  display: grid
+  grid-template-columns: 20% 1fr 1fr 1fr
+  &_score
+    margin-right: 30px
+    p
+      font-size: 56px
+      color: #2ED47A
+      margin: 10px 0 0 0
+    .title_score
+      display: flex
+      justify-content: space-between
+      align-items: baseline
+    .border_score
+      padding-left: 10px
+      color: #334D6E
+      font-weight: 300
+      font-size: 12px
+      list-style: none
+      li
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        h3
+          margin: 3px
+  &_rank
+    border-left: 1px solid #EBEFF2
+    padding: 0 15px
+    .border_rank
+      color: #334D6E
+      font-weight: 300
+      font-size: 12px
+      list-style: none
+      padding: 0
+      li
+        display: flex
+        align-items: baseline
+        h3
+          margin: 3px
+          font-weight: 500
+          color: #334D6E
+        .border_rank_1
+          margin-left: auto
+      li:first-child::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid #004BFF
+        width: 3px
+        height: 3px
+        margin-right: 10px
+      li:nth-child(2)::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid rgba(0, 75, 255, 0.75)
+        width: 3px
+        height: 3px
+        margin-right: 10px
+      li:nth-child(3)::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid rgba(0, 75, 255, 0.5)
+        width: 3px
+        height: 3px
+        margin-right: 10px
+      li:nth-child(4)::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid rgba(221, 76, 58, 0.5)
+        width: 3px
+        height: 3px
+        margin-right: 10px
+  &_change
+    border-left: 1px solid #EBEFF2
+    padding: 0 15px
+    span
+      color: $color-p
+      font-weight: 300
+      font-size: 10px
+    .border_change
+      color: #334D6E
+      font-weight: 500
+      font-size: 12px
+      list-style: none
+      padding: 0
+      li
+        display: flex
+        align-items: center
+        margin-top: 10px
+        span
+          color: $color-blue-light
+          font-size: 12px
+          font-weight: 500
+          margin: 0 5px 0 5px
+      li::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid $color-orange
+        margin-right: 5px
+      li:nth-child(4)::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid $color-green-light
+  &_traffic
+    border-left: 1px solid #EBEFF2
+    color: #334D6E
+    font-weight: 300
+    font-size: 12px
+    list-style: none
+    padding: 0 15px
+    .border_traffic
+      color: #334D6E
+      font-weight: 300
+      font-size: 12px
+      list-style: none
+      padding: 0
+      li
+        display: flex
+        align-items: baseline
+        h3
+          margin: 3px
+          font-weight: 500
+          color: #334D6E
+      .border_traffic_1
+        margin-left: auto
+      li:first-child::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid #004BFF
+        width: 3px
+        height: 3px
+        margin-right: 10px
+      li:nth-child(2)::before
+        content: ''
+        border-radius: 50%
+        border: 3px solid rgba(0, 75, 255, 0.5)
+        width: 3px
+        height: 3px
+        margin-right: 10px
+  &:nth-child(n)
+    h2
+      color: $color-p
+      font-family: Poppins
+      font-style: normal
+      font-weight: 500
+      font-size: 11px
+      margin: 0 0 15px 0
+
+.color_blue
+  color: $color-blue-light
+  font-size: 12px
+  font-weight: 500
+
+
+
+
+
+
